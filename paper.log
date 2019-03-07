@@ -1,0 +1,820 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.3.27)  4 FEB 2019 13:29
+entering extended mode
+**./paper.tex
+(paper.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
+(IEEEtran.cls
+Document Class: IEEEtran 2012/11/21 V1.8c by Harald Hanche-Olsen and Anders Chr
+istensen
+-- Based on V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 373.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 210mm x 297mm (a4) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+** ATTENTION: Overriding inner side margin to 1.41cm and outer side margin to 1
+.41cm via \CLASSINPUT.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\subfloat\subfloat.sty
+Package: subfloat 2003/08/21 version 2.14
+
+Package `subfloat', Version 2.14 of 2003/08/21.
+
+Package subfloat Warning: Numbers of floats not counted:
+(subfloat)                If you use one of the counters subfloatfiguremax or
+(subfloat)                subfloattablemax you will get strange error messages
+(subfloat)                containing \c@subfloatfiguremax or
+(subfloat)                \c@subfloattablemax:
+(subfloat)                Please switch on countmax or remove the code using
+(subfloat)                the counter then..
+
+)
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen119
+\captionmargin@=\dimen120
+\captionwidth=\dimen121
+\caption@tempdima=\dimen122
+\caption@indent=\dimen123
+\caption@parindent=\dimen124
+\caption@hangindent=\dimen125
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize {\centering \normalfont \footnotesize #1.\qquad \scshap
+e #2\par }\@IEEEtablecaptionsepspace \else \@IEEEfigurecaptionsepspace \setbox 
+\@tempboxa \hbox {\normalfont \footnotesize {#1.}~~ #2}\ifdim \wd \@tempboxa >\
+hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}~~ }\parbox [t]{
+\hsize }{\normalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLA
+SSOPTIONconference \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \h
+fil }\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi
+ \fi \fi .
+\c@ContinuedFloat=\count91
+)
+\c@subfigure=\count92
+\c@subtable=\count93
+)
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\enumitem\enumitem.sty
+Package: enumitem 2019/01/14 v3.7 Customized lists
+\labelindent=\skip44
+\enit@outerparindent=\dimen126
+\enit@toks=\toks16
+\enit@inbox=\box27
+\enit@count@id=\count94
+\enitdp@description=\count95
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\bm.sty"
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\scalerel\scalerel.sty
+Package: scalerel 2016/12/29 v1.8 Routines for constrained scaling and stretchi
+ng of objects, relative to a reference object or in absolute terms
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count96
+\calc@Bcount=\count97
+\calc@Adimen=\dimen127
+\calc@Bdimen=\dimen128
+\calc@Askip=\skip45
+\calc@Bskip=\skip46
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count98
+\calc@Cskip=\skip47
+)
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count99
+)
+\thesrwidth=\skip48
+\thesrheight=\skip49
+\srblobheight=\skip50
+\srblobdepth=\skip51
+\mnxsrwidth=\skip52
+\LMex=\skip53
+\LMpt=\skip54
+)
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\stackengine\stackengin
+e.sty
+Package: stackengine 2017/02/13 v4.01\ Stacking text and objects in convenient 
+ways
+
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\listofitems\listofitem
+s.sty
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\generic\listofitems\listofit
+ems.tex
+\loi_nestcnt=\count100
+)
+Package: listofitems 2018/03/13 v1.53 Grab items in lists using user-specified 
+sep char (CT)
+)
+\c@@stackindex=\count101
+\@boxshift=\skip55
+\stack@tmplength=\skip56
+\temp@stkl=\skip57
+\@stackedboxwidth=\skip58
+\@addedbox=\box28
+\@anchorbox=\box29
+\stackedbox=\box30
+\@centerbox=\box31
+\c@ROWcellindex@=\count102
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks17
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\svg\svg.sty
+Package: svg 2018/11/12 v2.02b (include SVG pictures)
+
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.st
+y
+Package: scrbase 2018/03/30 v3.25 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.s
+ty
+Package: scrlfile 2018/03/30 v3.25 KOMA-Script package (loading files)
+)) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\shellesc.sty"
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+)
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\trimspaces\trimspaces.
+sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\svg@box=\box32
+\c@svg@param@lastpage=\count103
+\c@svg@param@currpage=\count104
+)
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\transparent.sty"
+Package: transparent 2016/05/16 v1.1 Transparency via pdfTeX's color stack (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)) (paper.aux)
+\openout1 = `paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+
+(C:\Users\superpalo\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count105
+\scratchdimen=\dimen129
+\scratchbox=\box33
+\nofMPsegments=\count106
+\nofMParguments=\count107
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count108
+\MPscratchDim=\dimen130
+\MPnumerator=\count109
+\makeMPintoPDFobject=\count110
+\everyMPtoPDFconversion=\toks19
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.svg,.pdf,.jpeg,.png,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 41.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 41.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omspcr.fd"
+File: omspcr.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
+ (abstract.tex)
+(introduction.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 7.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 7.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)) (related_work.tex)
+(results.tex [1{C:/Users/superpalo/AppData/Local/MiKTeX/2.9/pdftex/config/pdfte
+x.map}
+
+
+]
+<./fig/LSOA_size_IMD_decile.pdf, id=13, 1085.38924pt x 590.63318pt>
+File: ./fig/LSOA_size_IMD_decile.pdf Graphic file (type pdf)
+<use ./fig/LSOA_size_IMD_decile.pdf>
+Package pdftex.def Info: ./fig/LSOA_size_IMD_decile.pdf  used on input line 69.
+
+(pdftex.def)             Requested size: 174.74405pt x 95.08904pt.
+<./fig/google_5_week_metrics_correlation_with_IMD_decile_subset.pdf, id=14, 104
+0.49887pt x 570.90872pt>
+File: ./fig/google_5_week_metrics_correlation_with_IMD_decile_subset.pdf Graphi
+c file (type pdf)
+<use ./fig/google_5_week_metrics_correlation_with_IMD_decile_subset.pdf>
+Package pdftex.def Info: ./fig/google_5_week_metrics_correlation_with_IMD_decil
+e_subset.pdf  used on input line 76.
+(pdftex.def)             Requested size: 249.63545pt x 136.96863pt.
+<./fig/signal_metrics/1_google_signal_features_box_plot_LTE.pdf, id=15, 169.282
+44pt x 165.50897pt>
+File: ./fig/signal_metrics/1_google_signal_features_box_plot_LTE.pdf Graphic fi
+le (type pdf)
+<use ./fig/signal_metrics/1_google_signal_features_box_plot_LTE.pdf>
+Package pdftex.def Info: ./fig/signal_metrics/1_google_signal_features_box_plot
+_LTE.pdf  used on input line 84.
+(pdftex.def)             Requested size: 92.36389pt x 90.3054pt.
+<./fig/signal_metrics/2_google_signal_features_box_plot_WCDMA.pdf, id=16, 169.2
+8242pt x 165.50899pt>
+File: ./fig/signal_metrics/2_google_signal_features_box_plot_WCDMA.pdf Graphic 
+file (type pdf)
+<use ./fig/signal_metrics/2_google_signal_features_box_plot_WCDMA.pdf>
+Package pdftex.def Info: ./fig/signal_metrics/2_google_signal_features_box_plot
+_WCDMA.pdf  used on input line 89.
+(pdftex.def)             Requested size: 92.36389pt x 90.3054pt.
+<./fig/signal_metrics/3_google_signal_features_box_plot_LTE_strong_signal.pdf, 
+id=17, 169.28242pt x 165.50919pt>
+File: ./fig/signal_metrics/3_google_signal_features_box_plot_LTE_strong_signal.
+pdf Graphic file (type pdf)
+<use ./fig/signal_metrics/3_google_signal_features_box_plot_LTE_strong_signal.p
+df>
+Package pdftex.def Info: ./fig/signal_metrics/3_google_signal_features_box_plot
+_LTE_strong_signal.pdf  used on input line 93.
+(pdftex.def)             Requested size: 92.36389pt x 90.30551pt.
+<./fig/signal_metrics/4_google_signal_features_box_plot_LTE_signal_power_mean[d
+Bm].pdf, id=18, 206.33102pt x 165.50919pt>
+File: ./fig/signal_metrics/4_google_signal_features_box_plot_LTE_signal_power_m
+ean[dBm].pdf Graphic file (type pdf)
+<use ./fig/signal_metrics/4_google_signal_features_box_plot_LTE_signal_power_me
+an[dBm].pdf>
+Package pdftex.def Info: ./fig/signal_metrics/4_google_signal_features_box_plot
+_LTE_signal_power_mean[dBm].pdf  used on input line 97.
+(pdftex.def)             Requested size: 112.33519pt x 90.11105pt.
+<./fig/RSRPnRSRQ_metrics/1_google_RSRPnRSRQ_box_RSRPpoorRSRQpoor.pdf, id=19, 27
+6.22101pt x 165.50919pt>
+File: ./fig/RSRPnRSRQ_metrics/1_google_RSRPnRSRQ_box_RSRPpoorRSRQpoor.pdf Graph
+ic file (type pdf)
+<use ./fig/RSRPnRSRQ_metrics/1_google_RSRPnRSRQ_box_RSRPpoorRSRQpoor.pdf>
+Package pdftex.def Info: ./fig/RSRPnRSRQ_metrics/1_google_RSRPnRSRQ_box_RSRPpoo
+rRSRQpoor.pdf  used on input line 107.
+(pdftex.def)             Requested size: 74.89139pt x 44.87242pt.
+<./fig/RSRPnRSRQ_metrics/2_google_RSRPnRSRQ_box_RSRPpoorRSRQok.pdf, id=20, 276.
+22101pt x 165.50917pt>
+File: ./fig/RSRPnRSRQ_metrics/2_google_RSRPnRSRQ_box_RSRPpoorRSRQok.pdf Graphic
+ file (type pdf)
+<use ./fig/RSRPnRSRQ_metrics/2_google_RSRPnRSRQ_box_RSRPpoorRSRQok.pdf>
+Package pdftex.def Info: ./fig/RSRPnRSRQ_metrics/2_google_RSRPnRSRQ_box_RSRPpoo
+rRSRQok.pdf  used on input line 111.
+(pdftex.def)             Requested size: 74.89139pt x 44.87242pt.
+<./fig/RSRPnRSRQ_metrics/3_google_RSRPnRSRQ_box_RSRPpoorRSRQgood.pdf, id=21, 27
+6.2171pt x 165.50897pt>
+File: ./fig/RSRPnRSRQ_metrics/3_google_RSRPnRSRQ_box_RSRPpoorRSRQgood.pdf Graph
+ic file (type pdf)
+<use ./fig/RSRPnRSRQ_metrics/3_google_RSRPnRSRQ_box_RSRPpoorRSRQgood.pdf>
+Package pdftex.def Info: ./fig/RSRPnRSRQ_metrics/3_google_RSRPnRSRQ_box_RSRPpoo
+rRSRQgood.pdf  used on input line 115.
+(pdftex.def)             Requested size: 74.89139pt x 44.8749pt.
+<./fig/RSRPnRSRQ_metrics/4_google_RSRPnRSRQ_box_RSRPokRSRQpoor.pdf, id=22, 276.
+22098pt x 165.50897pt>
+File: ./fig/RSRPnRSRQ_metrics/4_google_RSRPnRSRQ_box_RSRPokRSRQpoor.pdf Graphic
+ file (type pdf)
+<use ./fig/RSRPnRSRQ_metrics/4_google_RSRPnRSRQ_box_RSRPokRSRQpoor.pdf>
+Package pdftex.def Info: ./fig/RSRPnRSRQ_metrics/4_google_RSRPnRSRQ_box_RSRPokR
+SRQpoor.pdf  used on input line 119.
+(pdftex.def)             Requested size: 74.89139pt x 44.87238pt.
+<./fig/RSRPnRSRQ_metrics/5_google_RSRPnRSRQ_box_RSRPokRSRQok.pdf, id=23, 276.22
+101pt x 165.50897pt>
+File: ./fig/RSRPnRSRQ_metrics/5_google_RSRPnRSRQ_box_RSRPokRSRQok.pdf Graphic f
+ile (type pdf)
+<use ./fig/RSRPnRSRQ_metrics/5_google_RSRPnRSRQ_box_RSRPokRSRQok.pdf>
+Package pdftex.def Info: ./fig/RSRPnRSRQ_metrics/5_google_RSRPnRSRQ_box_RSRPokR
+SRQok.pdf  used on input line 123.
+(pdftex.def)             Requested size: 74.89139pt x 44.87238pt.
+<./fig/RSRPnRSRQ_metrics/6_google_RSRPnRSRQ_box_RSRPokRSRQgood.pdf, id=24, 276.
+21713pt x 165.50897pt>
+File: ./fig/RSRPnRSRQ_metrics/6_google_RSRPnRSRQ_box_RSRPokRSRQgood.pdf Graphic
+ file (type pdf)
+<use ./fig/RSRPnRSRQ_metrics/6_google_RSRPnRSRQ_box_RSRPokRSRQgood.pdf>
+Package pdftex.def Info: ./fig/RSRPnRSRQ_metrics/6_google_RSRPnRSRQ_box_RSRPokR
+SRQgood.pdf  used on input line 127.
+(pdftex.def)             Requested size: 74.89139pt x 44.8749pt.
+<./fig/RSRPnRSRQ_metrics/7_google_RSRPnRSRQ_box_RSRPgoodRSRQpoor.pdf, id=25, 27
+6.22101pt x 165.50896pt>
+File: ./fig/RSRPnRSRQ_metrics/7_google_RSRPnRSRQ_box_RSRPgoodRSRQpoor.pdf Graph
+ic file (type pdf)
+<use ./fig/RSRPnRSRQ_metrics/7_google_RSRPnRSRQ_box_RSRPgoodRSRQpoor.pdf>
+Package pdftex.def Info: ./fig/RSRPnRSRQ_metrics/7_google_RSRPnRSRQ_box_RSRPgoo
+dRSRQpoor.pdf  used on input line 131.
+(pdftex.def)             Requested size: 74.89139pt x 44.87236pt.
+<./fig/RSRPnRSRQ_metrics/8_google_RSRPnRSRQ_box_RSRPgoodRSRQok.pdf, id=26, 276.
+22101pt x 165.50896pt>
+File: ./fig/RSRPnRSRQ_metrics/8_google_RSRPnRSRQ_box_RSRPgoodRSRQok.pdf Graphic
+ file (type pdf)
+<use ./fig/RSRPnRSRQ_metrics/8_google_RSRPnRSRQ_box_RSRPgoodRSRQok.pdf>
+Package pdftex.def Info: ./fig/RSRPnRSRQ_metrics/8_google_RSRPnRSRQ_box_RSRPgoo
+dRSRQok.pdf  used on input line 135.
+(pdftex.def)             Requested size: 74.89139pt x 44.87236pt.
+<./fig/RSRPnRSRQ_metrics/9_google_RSRPnRSRQ_box_RSRPgoodRSRQgood.pdf, id=27, 27
+6.2171pt x 165.50896pt>
+File: ./fig/RSRPnRSRQ_metrics/9_google_RSRPnRSRQ_box_RSRPgoodRSRQgood.pdf Graph
+ic file (type pdf)
+<use ./fig/RSRPnRSRQ_metrics/9_google_RSRPnRSRQ_box_RSRPgoodRSRQgood.pdf>
+Package pdftex.def Info: ./fig/RSRPnRSRQ_metrics/9_google_RSRPnRSRQ_box_RSRPgoo
+dRSRQgood.pdf  used on input line 139.
+(pdftex.def)             Requested size: 74.89139pt x 44.8749pt.
+<./fig/youtube_metrics/1_google_youtube_features_box_plot_youtube_usage.pdf, id
+=28, 179.30817pt x 162.26814pt>
+File: ./fig/youtube_metrics/1_google_youtube_features_box_plot_youtube_usage.pd
+f Graphic file (type pdf)
+<use ./fig/youtube_metrics/1_google_youtube_features_box_plot_youtube_usage.pdf
+>
+Package pdftex.def Info: ./fig/youtube_metrics/1_google_youtube_features_box_pl
+ot_youtube_usage.pdf  used on input line 149.
+(pdftex.def)             Requested size: 99.85265pt x 90.36443pt.
+<./fig/youtube_metrics/3_google_youtube_features_box_plot_youtube_start_time_90
+thpercentile_normalized[ms].pdf, id=29, 202.70808pt x 162.26814pt>
+File: ./fig/youtube_metrics/3_google_youtube_features_box_plot_youtube_start_ti
+me_90thpercentile_normalized[ms].pdf Graphic file (type pdf)
+<use ./fig/youtube_metrics/3_google_youtube_features_box_plot_youtube_start_tim
+e_90thpercentile_normalized[ms].pdf>
+Package pdftex.def Info: ./fig/youtube_metrics/3_google_youtube_features_box_pl
+ot_youtube_start_time_90thpercentile_normalized[ms].pdf  used on input line 153
+.
+(pdftex.def)             Requested size: 112.33519pt x 89.92616pt.
+<./fig/youtube_metrics/4_google_youtube_features_box_plot_youtube_fast_start.pd
+f, id=30, 169.28242pt x 165.50897pt>
+File: ./fig/youtube_metrics/4_google_youtube_features_box_plot_youtube_fast_sta
+rt.pdf Graphic file (type pdf)
+<use ./fig/youtube_metrics/4_google_youtube_features_box_plot_youtube_fast_star
+t.pdf>
+Package pdftex.def Info: ./fig/youtube_metrics/4_google_youtube_features_box_pl
+ot_youtube_fast_start.pdf  used on input line 159.
+(pdftex.def)             Requested size: 92.36389pt x 90.3054pt.
+<./fig/youtube_metrics/5_google_youtube_features_box_plot_youtube_goodput_[Mbps
+].pdf, id=31, 206.45647pt x 165.68933pt>
+File: ./fig/youtube_metrics/5_google_youtube_features_box_plot_youtube_goodput_
+[Mbps].pdf Graphic file (type pdf)
+<use ./fig/youtube_metrics/5_google_youtube_features_box_plot_youtube_goodput_[
+Mbps].pdf>
+Package pdftex.def Info: ./fig/youtube_metrics/5_google_youtube_features_box_pl
+ot_youtube_goodput_[Mbps].pdf  used on input line 163.
+(pdftex.def)             Requested size: 112.33519pt x 90.15352pt.
+ [2 <./fig/LSOA_size_IMD_decile.pdf> <./fig/google_5_week_metrics_correlation_w
+ith_IMD_decile_subset.pdf
+
+pdfTeX warning: pdflatex (file ./fig/google_5_week_metrics_correlation_with_IMD
+_decile_subset.pdf): PDF inclusion: multiple pdfs with page group included in a
+ single page
+> <./fig/signal_metrics/1_google_signal_features_box_plot_LTE.pdf
+
+pdfTeX warning: pdflatex (file ./fig/signal_metrics/1_google_signal_features_bo
+x_plot_LTE.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+gle page
+> <./fig/signal_metrics/2_google_signal_features_box_plot_WCDMA.pdf
+
+pdfTeX warning: pdflatex (file ./fig/signal_metrics/2_google_signal_features_bo
+x_plot_WCDMA.pdf): PDF inclusion: multiple pdfs with page group included in a s
+ingle page
+> <./fig/signal_metrics/3_google_signal_features_box_plot_LTE_strong_signal.pdf
+
+
+pdfTeX warning: pdflatex (file ./fig/signal_metrics/3_google_signal_features_bo
+x_plot_LTE_strong_signal.pdf): PDF inclusion: multiple pdfs with page group inc
+luded in a single page
+> <./fig/signal_metrics/4_google_signal_features_box_plot_LTE_signal_power_mean
+[dBm].pdf
+
+pdfTeX warning: pdflatex (file ./fig/signal_metrics/4_google_signal_features_bo
+x_plot_LTE_signal_power_mean[dBm].pdf): PDF inclusion: multiple pdfs with page 
+group included in a single page
+> <./fig/RSRPnRSRQ_metrics/1_google_RSRPnRSRQ_box_RSRPpoorRSRQpoor.pdf
+
+pdfTeX warning: pdflatex (file ./fig/RSRPnRSRQ_metrics/1_google_RSRPnRSRQ_box_R
+SRPpoorRSRQpoor.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
+> <./fig/RSRPnRSRQ_metrics/2_google_RSRPnRSRQ_box_RSRPpoorRSRQok.pdf
+
+pdfTeX warning: pdflatex (file ./fig/RSRPnRSRQ_metrics/2_google_RSRPnRSRQ_box_R
+SRPpoorRSRQok.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+> <./fig/RSRPnRSRQ_metrics/3_google_RSRPnRSRQ_box_RSRPpoorRSRQgood.pdf
+
+pdfTeX warning: pdflatex (file ./fig/RSRPnRSRQ_metrics/3_google_RSRPnRSRQ_box_R
+SRPpoorRSRQgood.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
+> <./fig/RSRPnRSRQ_metrics/4_google_RSRPnRSRQ_box_RSRPokRSRQpoor.pdf
+
+pdfTeX warning: pdflatex (file ./fig/RSRPnRSRQ_metrics/4_google_RSRPnRSRQ_box_R
+SRPokRSRQpoor.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+> <./fig/RSRPnRSRQ_metrics/5_google_RSRPnRSRQ_box_RSRPokRSRQok.pdf
+
+pdfTeX warning: pdflatex (file ./fig/RSRPnRSRQ_metrics/5_google_RSRPnRSRQ_box_R
+SRPokRSRQok.pdf): PDF inclusion: multiple pdfs with page group included in a si
+ngle page
+> <./fig/RSRPnRSRQ_metrics/6_google_RSRPnRSRQ_box_RSRPokRSRQgood.pdf
+
+pdfTeX warning: pdflatex (file ./fig/RSRPnRSRQ_metrics/6_google_RSRPnRSRQ_box_R
+SRPokRSRQgood.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+> <./fig/RSRPnRSRQ_metrics/7_google_RSRPnRSRQ_box_RSRPgoodRSRQpoor.pdf
+
+pdfTeX warning: pdflatex (file ./fig/RSRPnRSRQ_metrics/7_google_RSRPnRSRQ_box_R
+SRPgoodRSRQpoor.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
+> <./fig/RSRPnRSRQ_metrics/8_google_RSRPnRSRQ_box_RSRPgoodRSRQok.pdf
+
+pdfTeX warning: pdflatex (file ./fig/RSRPnRSRQ_metrics/8_google_RSRPnRSRQ_box_R
+SRPgoodRSRQok.pdf): PDF inclusion: multiple pdfs with page group included in a 
+single page
+> <./fig/RSRPnRSRQ_metrics/9_google_RSRPnRSRQ_box_RSRPgoodRSRQgood.pdf
+
+pdfTeX warning: pdflatex (file ./fig/RSRPnRSRQ_metrics/9_google_RSRPnRSRQ_box_R
+SRPgoodRSRQgood.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
+>]
+<./fig/fliers/LTE_lower_fliers_2colors_IMD.pdf, id=1338, 706.19302pt x 544.2356
+6pt>
+File: ./fig/fliers/LTE_lower_fliers_2colors_IMD.pdf Graphic file (type pdf)
+<use ./fig/fliers/LTE_lower_fliers_2colors_IMD.pdf>
+Package pdftex.def Info: ./fig/fliers/LTE_lower_fliers_2colors_IMD.pdf  used on
+ input line 179.
+(pdftex.def)             Requested size: 155.18285pt x 119.59103pt.
+<./fig/fliers/LTE_strong_signal_lower_fliers_2colors_IMD.pdf, id=1339, 706.1930
+2pt x 544.23566pt>
+File: ./fig/fliers/LTE_strong_signal_lower_fliers_2colors_IMD.pdf Graphic file 
+(type pdf)
+<use ./fig/fliers/LTE_strong_signal_lower_fliers_2colors_IMD.pdf>
+Package pdftex.def Info: ./fig/fliers/LTE_strong_signal_lower_fliers_2colors_IM
+D.pdf  used on input line 183.
+(pdftex.def)             Requested size: 155.18285pt x 119.59103pt.
+<./fig/fliers/youtube_usage_higher_fliers_2colors_IMD.pdf, id=1340, 706.19302pt
+ x 544.23566pt>
+File: ./fig/fliers/youtube_usage_higher_fliers_2colors_IMD.pdf Graphic file (ty
+pe pdf)
+<use ./fig/fliers/youtube_usage_higher_fliers_2colors_IMD.pdf>
+Package pdftex.def Info: ./fig/fliers/youtube_usage_higher_fliers_2colors_IMD.p
+df  used on input line 187.
+(pdftex.def)             Requested size: 155.18285pt x 119.59103pt.
+<./fig/fliers/RSRPokRSRQpoor_higher_fliers_2colors_IMD.pdf, id=1341, 706.19302p
+t x 544.23566pt>
+File: ./fig/fliers/RSRPokRSRQpoor_higher_fliers_2colors_IMD.pdf Graphic file (t
+ype pdf)
+<use ./fig/fliers/RSRPokRSRQpoor_higher_fliers_2colors_IMD.pdf>
+Package pdftex.def Info: ./fig/fliers/RSRPokRSRQpoor_higher_fliers_2colors_IMD.
+pdf  used on input line 191.
+(pdftex.def)             Requested size: 155.18285pt x 119.59103pt.
+<./fig/fliers/RSRPgoodRSRQpoor_higher_fliers_2colors_IMD.pdf, id=1342, 706.1930
+2pt x 544.23566pt>
+File: ./fig/fliers/RSRPgoodRSRQpoor_higher_fliers_2colors_IMD.pdf Graphic file 
+(type pdf)
+<use ./fig/fliers/RSRPgoodRSRQpoor_higher_fliers_2colors_IMD.pdf>
+Package pdftex.def Info: ./fig/fliers/RSRPgoodRSRQpoor_higher_fliers_2colors_IM
+D.pdf  used on input line 195.
+(pdftex.def)             Requested size: 155.18285pt x 119.59103pt.
+<./fig/fliers/RSRPgoodRSRQok_higher_fliers_2colors_IMD.pdf, id=1343, 706.19302p
+t x 544.23566pt>
+File: ./fig/fliers/RSRPgoodRSRQok_higher_fliers_2colors_IMD.pdf Graphic file (t
+ype pdf)
+<use ./fig/fliers/RSRPgoodRSRQok_higher_fliers_2colors_IMD.pdf>
+Package pdftex.def Info: ./fig/fliers/RSRPgoodRSRQok_higher_fliers_2colors_IMD.
+pdf  used on input line 199.
+(pdftex.def)             Requested size: 155.18285pt x 119.59103pt.
+<./fig/spatial_algorithms/median.pdf, id=1344, 1261.8342pt x 706.80057pt>
+File: ./fig/spatial_algorithms/median.pdf Graphic file (type pdf)
+<use ./fig/spatial_algorithms/median.pdf>
+Package pdftex.def Info: ./fig/spatial_algorithms/median.pdf  used on input lin
+e 213.
+(pdftex.def)             Requested size: 112.33519pt x 62.91907pt.
+<./fig/spatial_algorithms/moran_scatter_plot.pdf, id=1345, 1261.8342pt x 706.80
+057pt>
+File: ./fig/spatial_algorithms/moran_scatter_plot.pdf Graphic file (type pdf)
+<use ./fig/spatial_algorithms/moran_scatter_plot.pdf>
+Package pdftex.def Info: ./fig/spatial_algorithms/moran_scatter_plot.pdf  used 
+on input line 217.
+(pdftex.def)             Requested size: 112.33519pt x 62.91907pt.
+<./fig/spatial_algorithms/scatter_plot.pdf, id=1346, 1261.8342pt x 706.80057pt>
+
+File: ./fig/spatial_algorithms/scatter_plot.pdf Graphic file (type pdf)
+<use ./fig/spatial_algorithms/scatter_plot.pdf>
+Package pdftex.def Info: ./fig/spatial_algorithms/scatter_plot.pdf  used on inp
+ut line 221.
+(pdftex.def)             Requested size: 112.33519pt x 62.91907pt.
+<./fig/spatial_algorithms/ztest.pdf, id=1347, 1261.8342pt x 706.80057pt>
+File: ./fig/spatial_algorithms/ztest.pdf Graphic file (type pdf)
+<use ./fig/spatial_algorithms/ztest.pdf>
+Package pdftex.def Info: ./fig/spatial_algorithms/ztest.pdf  used on input line
+ 225.
+(pdftex.def)             Requested size: 112.33519pt x 62.91907pt.
+) (conclusion_n_future_work.tex)
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[3
+
+ <./fig/youtube_metrics/1_google_youtube_features_box_plot_youtube_usage.pdf> <
+./fig/youtube_metrics/3_google_youtube_features_box_plot_youtube_start_time_90t
+hpercentile_normalized[ms].pdf
+
+pdfTeX warning: pdflatex (file ./fig/youtube_metrics/3_google_youtube_features_
+box_plot_youtube_start_time_90thpercentile_normalized[ms].pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./fig/youtube_metrics/4_google_youtube_features_box_plot_youtube_fast_start.
+pdf
+
+pdfTeX warning: pdflatex (file ./fig/youtube_metrics/4_google_youtube_features_
+box_plot_youtube_fast_start.pdf): PDF inclusion: multiple pdfs with page group 
+included in a single page
+> <./fig/youtube_metrics/5_google_youtube_features_box_plot_youtube_goodput_[Mb
+ps].pdf
+
+pdfTeX warning: pdflatex (file ./fig/youtube_metrics/5_google_youtube_features_
+box_plot_youtube_goodput_[Mbps].pdf): PDF inclusion: multiple pdfs with page gr
+oup included in a single page
+>] [4
+
+ <./fig/fliers/LTE_lower_fliers_2colors_IMD.pdf> <./fig/fliers/LTE_strong_signa
+l_lower_fliers_2colors_IMD.pdf
+
+pdfTeX warning: pdflatex (file ./fig/fliers/LTE_strong_signal_lower_fliers_2col
+ors_IMD.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+> <./fig/fliers/youtube_usage_higher_fliers_2colors_IMD.pdf
+
+pdfTeX warning: pdflatex (file ./fig/fliers/youtube_usage_higher_fliers_2colors
+_IMD.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
+> <./fig/fliers/RSRPokRSRQpoor_higher_fliers_2colors_IMD.pdf
+
+pdfTeX warning: pdflatex (file ./fig/fliers/RSRPokRSRQpoor_higher_fliers_2color
+s_IMD.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <./fig/fliers/RSRPgoodRSRQpoor_higher_fliers_2colors_IMD.pdf
+
+pdfTeX warning: pdflatex (file ./fig/fliers/RSRPgoodRSRQpoor_higher_fliers_2col
+ors_IMD.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+> <./fig/fliers/RSRPgoodRSRQok_higher_fliers_2colors_IMD.pdf
+
+pdfTeX warning: pdflatex (file ./fig/fliers/RSRPgoodRSRQok_higher_fliers_2color
+s_IMD.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+> <./fig/spatial_algorithms/median.pdf
+
+pdfTeX warning: pdflatex (file ./fig/spatial_algorithms/median.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+> <./fig/spatial_algorithms/moran_scatter_plot.pdf
+
+pdfTeX warning: pdflatex (file ./fig/spatial_algorithms/moran_scatter_plot.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
+> <./fig/spatial_algorithms/scatter_plot.pdf
+
+pdfTeX warning: pdflatex (file ./fig/spatial_algorithms/scatter_plot.pdf): PDF 
+inclusion: multiple pdfs with page group included in a single page
+> <./fig/spatial_algorithms/ztest.pdf
+
+pdfTeX warning: pdflatex (file ./fig/spatial_algorithms/ztest.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>] (paper.aux) ) 
+Here is how much of TeX's memory you used:
+ 6317 strings out of 493305
+ 109079 string characters out of 3138862
+ 197574 words of memory out of 3000000
+ 9701 multiletter control sequences out of 15000+200000
+ 41212 words of font info for 84 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 48i,8n,42p,824b,458s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
+imes/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on paper.pdf (4 pages, 17097710 bytes).
+PDF statistics:
+ 41582 PDF objects out of 45951 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+

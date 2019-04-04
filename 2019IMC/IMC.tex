@@ -1,0 +1,278 @@
+\documentclass[sigconf]{acmart}
+
+
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+
+\sloppy
+\usepackage{balance}
+\usepackage{booktabs} % For formal tables
+\usepackage{soul}
+
+\usepackage{booktabs} % For formal tables
+\usepackage{pbox}
+\usepackage{subfigure}
+\usepackage{epsfig,endnotes}
+\usepackage{epstopdf}
+\usepackage{adjustbox}
+\usepackage{xspace} 
+\usepackage{xcolor}
+\usepackage{url} 
+\usepackage{enumitem}
+% Turns comments ON or OFF
+\newif\ifcomment
+%\commenttrue
+\commentfalse
+
+% Turns watermark ON or OFF
+\newif\ifwatermark
+%\watermarktrue
+\watermarkfalse
+
+% Watermark (or not)
+\ifwatermark
+\usepackage{draftwatermark}
+\SetWatermarkScale{.7}
+\SetWatermarkText{\shortstack{In Submission:\\Do Not Distribute}}
+\SetWatermarkColor[rgb]{1,0.88,0.88}
+\fi
+
+% Comments (or NOT)
+\ifcomment
+
+\newcounter{DPNumberOfComments}
+\stepcounter{DPNumberOfComments}
+\newcommand{\dpnote}[1]{\textcolor{green}{\small \bf [DP\#\arabic{DPNumberOfComments}\stepcounter{DPNumberOfComments}: #1]}}
+
+\newcounter{SPNumberOfComments}
+\stepcounter{SPNumberOfComments}
+\newcommand{\spnote}[1]{\textcolor{red}{\small \bf [SP: \#\arabic{SPNumberOfComments}\stepcounter{SPNumberOfComments}: #1]}}
+
+\newcounter{PMNumberOfComments}
+\stepcounter{PMNumberOfComments}
+\newcommand{\pmnote}[1]{\textcolor{blue}{\small \bf [PM: \#\arabic{PMNumberOfComments}\stepcounter{PMNumberOfComments}: #1]}}
+
+
+% Add a large block for a NOTE
+\newcommand{\NOTE}[1]
+{
+	{\footnotesize\it
+		\begin{center}
+			\begin{tabular}{|c|}
+				\hline
+				\parbox{0.85\columnwidth}{
+					\medskip
+					#1
+					\medskip} \\
+				\hline
+			\end{tabular}
+		\end{center}
+	}
+}
+\else
+\newcommand\dpnote[1]{}
+\newcommand\NOTE[1]{}
+\newcommand{\spnote}[1]{}
+\newcommand{\pmnote}[1]{}
+
+
+\fi
+
+% General commands -- across papers
+
+\newcommand{\fig}{{Fig.}}
+\newcommand{\eg}{{e.g.,}\xspace}
+\newcommand{\ie}{{\it i.e.,}\xspace}
+
+\newcommand{\takeaway}[1]{\noindent \textit{\textbf{Takeaway:}~#1}}
+% Compression among lines
+%\def\baselinestretch{0.95}
+
+%\usepackage[ruled]{algorithm2e} % For algorithms
+
+\usepackage[ruled]{algorithm2e} % For algorithms
+\renewcommand{\algorithmcfname}{ALGORITHM}
+\SetAlFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlCapNameFnt{\small}
+\SetAlCapHSkip{0pt}
+\IncMargin{-\parindent}
+
+
+
+\usepackage{booktabs} % For formal tables
+
+
+
+%\copyrightyear{2018}
+%\acmYear{2018}
+%\setcopyright{acmlicensed}
+%\acmConference[IMC '18]{2018 Internet Measurement Conference}{October 31-November 2, 2018}{Boston, MA, USA} 
+%\acmBooktitle{2018 Internet Measurement Conference (IMC '18), October 31-November 2, 2018, Boston, MA, USA}
+%\acmPrice{15.00} \acmDOI{10.1145/3278532.3278540} \acmISBN{978-1-4503-5619-0/18/10}
+
+
+% Copyright
+%\setcopyright{none}
+%\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+
+% DOI
+%\acmDOI{10.475/123_4}
+
+% ISBN
+%\acmISBN{123-4567-24-567/08/06}
+
+%Conference
+%\acmConference[IMC'18]{ACM Internet Measurement Conference}{October 2018}{Boston, MA, USA}
+%\acmYear{2018}
+%\copyrightyear{2018}
+%
+%
+%\acmArticle{4}
+%\acmPrice{15.00}
+
+
+
+\begin{document}
+	\title{Qoe and socio-economical relation in a large mobile network operator}
+	%\titlenote{Produces the permission block, and
+	%  copyright information}
+	%\subtitle{Extended Abstract}
+	%\subtitlenote{The full version of the author's guide is available as
+	%  \texttt{acmart.pdf} document}
+	
+	%\author{%
+	%	Harini Kolamunna$^{\ast\ddagger}$, Ilias Leontiadis$^\star$, Diego Perino$^\star$,\\ Suranga Seneviratne$^\circ$, Kanchana Thilakarathna$^{\circ\ddagger}$, Aruna Seneviratne$^{\ast\ddagger}$\\
+	%	\affaddr{$^\ast$The University of New South Wales, Sydney, Australia, $^\star$Telefonica Research, Spain}\\
+	%	\affaddr{$^\circ$The University of Sydney, Sydney, Australia, $^\ddagger$Data61-CSIRO, Australia} 
+	%}
+	
+	\author{Harini Kolamunna$^{\ast\ddagger}$, Ilias Leontiadis$^\star$, Diego Perino$^\star$ \\ Suranga Seneviratne$^\circ$, Kanchana Thilakarathna$^{\circ\ddagger}$, Aruna Seneviratne$^{\ast\ddagger}$} 
+%	\authornote{Dr.~Trovato insisted his name be first.}
+%	\orcid{1234-5678-9012}
+	\affiliation{%
+		\institution{$^\ast$The University of New South Wales, Sydney, Australia, $^\star$Telefonica Research, Spain, \\  $^\circ$The University of Sydney, Sydney, Australia, $^\ddagger$Data61-CSIRO, Australia}
+		%  \streetaddress{P.O. Box 1212}
+		%  \city{Dublin}
+		%  \state{Ohio}
+		%  \postcode{43017-6221}
+	}
+	%\email{trovato@corporation.com}
+	%
+	%\author{G.K.M. Tobin}
+	%\authornote{The secretary disavows any knowledge of this author's actions.}
+	%\affiliation{%
+	%  \institution{Institute for Clarity in Documentation}
+	%  \streetaddress{P.O. Box 1212}
+	%  \city{Dublin}
+	%  \state{Ohio}
+	%  \postcode{43017-6221}
+	%}
+	%\email{webmaster@marysville-ohio.com}
+	%
+	%\author{Lars Th{\o}rv{\"a}ld}
+	%\authornote{This author is the
+	%  one who did all the really hard work.}
+	%\affiliation{%
+	%  \institution{The Th{\o}rv{\"a}ld Group}
+	%  \streetaddress{1 Th{\o}rv{\"a}ld Circle}
+	%  \city{Hekla}
+	%  \country{Iceland}}
+	%\email{larst@affiliation.org}
+	%
+	%\author{Valerie B\'eranger}
+	%\affiliation{%
+	%  \institution{Inria Paris-Rocquencourt}
+	%  \city{Rocquencourt}
+	%  \country{France}
+	%}
+	%\author{Aparna Patel}
+	%\affiliation{%
+	% \institution{Rajiv Gandhi University}
+	% \streetaddress{Rono-Hills}
+	% \city{Doimukh}
+	% \state{Arunachal Pradesh}
+	% \country{India}}
+	%\author{Huifen Chan}
+	%\affiliation{%
+	%  \institution{Tsinghua University}
+	%  \streetaddress{30 Shuangqing Rd}
+	%  \city{Haidian Qu}
+	%  \state{Beijing Shi}
+	%  \country{China}
+	%}
+	%
+	%\author{Charles Palmer}
+	%\affiliation{%
+	%  \institution{Palmer Research Laboratories}
+	%  \streetaddress{8600 Datapoint Drive}
+	%  \city{San Antonio}
+	%  \state{Texas}
+	%  \postcode{78229}}
+	%\email{cpalmer@prl.com}
+	%
+	%\author{John Smith}
+	%\affiliation{\institution{The Th{\o}rv{\"a}ld Group}}
+	%\email{jsmith@affiliation.org}
+	%
+	%\author{Julius P.~Kumquat}
+	%\affiliation{\institution{The Kumquat Consortium}}
+	%\email{jpkumquat@consortium.net}
+	
+	% The default list of authors is too long for headers.
+	\renewcommand{\shortauthors}{H. Kolamunna et al.}
+	
+	
+	\begin{abstract}
+		\input sections/abstract
+	\end{abstract}
+	
+	%x
+	% The code below should be generated by the tool at
+	% http://dl.acm.org/ccs.cfm
+	% Please copy and paste the code instead of the example below.
+	%
+%\begin{CCSXML}
+%	<ccs2012>
+%	<concept>
+%	<concept_id>10003033.10003079.10011704</concept_id>
+%	<concept_desc>Networks~Network measurement</concept_desc>
+%	<concept_significance>500</concept_significance>
+%	</concept>
+%	</ccs2012>
+%	<concept_id>10003033.10003106.10003113</concept_id>
+%	<concept_desc>Networks~Mobile networks</concept_desc>
+%	<concept_significance>500</concept_significance>
+%	</concept>
+%	<concept>
+%\end{CCSXML}
+
+
+%\ccsdesc[500]{Networks~Network measurement}
+%\ccsdesc[500]{Networks~Mobile networks}
+
+	
+	
+%	\keywords{Wearables, IoT, Mobile Networks}
+	
+	
+	\maketitle
+	\input sections/introduction
+	\input sections/methodology
+	\input sections/space
+	\input sections/time
+	\input sections/user
+	\input sections/conclusion
+	\newpage
+	\balance
+	\bibliographystyle{ACM-Reference-Format}
+	\bibliography{biblio.bib}
+	
+\end{document}

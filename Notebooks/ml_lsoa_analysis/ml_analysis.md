@@ -547,8 +547,10 @@ residents_feature_subset_perf4g = ['rtt4g_p10', 'rtt4g_p25', 'rtt4g_p50', 'rtt4g
 ### 4.2.1 Antenna feature subsets
 #### 4.2.1.1 antenna_feature_subset_mobility
 ##### Logistic Regression
-Antenna LR 10CV f1_weighted scores : [0.87464233 0.87099324 0.87559499 0.87789664 0.87793183 0.87353143
- 0.88834426 0.87871298 0.87877473 0.89009563]
+Antenna LR 10CV f1_weighted scores : 
+
+    [0.87464233 0.87099324 0.87559499 0.87789664 0.87793183 0.87353143 0.88834426 0.87871298 0.87877473 0.89009563]
+    
 Antenna LR classification report :
 
              precision    recall  f1-score   support

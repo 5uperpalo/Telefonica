@@ -127,6 +127,9 @@ ylabel = plt.ylabel("Fraction of all samples", labelpad=14)
 
 
 ```python
+# XGBOOST importance types
+importance_types = ['weight', 'gain', 'cover', 'total_gain', 'total_cover']
+
 # prepare labels, samples, train/test datasets
 antenna_dt_pd_ml_scaled = pd.read_csv('antenna_dt_pd_ml_scaled.csv', index_col=False)
 residents_dt_pd_ml_scaled = pd.read_csv('residents_dt_pd_ml_scaled.csv', index_col=False)
@@ -146,8 +149,8 @@ residents_samples_train, residents_samples_test, residents_labels_train, residen
 # logistic regression
 # For multiclass problems, only ‘newton-cg’, ‘sag’, ‘saga’ and ‘lbfgs’ handle multinomial loss; ‘liblinear’ is limited to one-versus-rest schemes.
 # solver = ?
-LR_clf_ant = LogisticRegression(multi_class='multinomial', solver='lbfgs')
 # antenna
+LR_clf_ant = LogisticRegression(multi_class='multinomial', solver='lbfgs')
 LRscores_ant = cross_val_score(LR_clf_ant, antenna_samples, antenna_labels, cv=10, scoring='f1_weighted')
 LR_clf_ant.fit(antenna_samples_train,antenna_labels_train)
 LRantenna_predicted = LR_clf_ant.predict(antenna_samples_test)
@@ -165,8 +168,8 @@ print('Residents LR confusion matrix :\n' + str(confusion_matrix(residents_label
 
 # SVM
 # about gamma='scale' issue : https://stackoverflow.com/questions/52582796/support-vector-regression-typeerror-must-be-real-number-not-str
-SVM_clf_ant = svm.SVC(decision_function_shape='ovo')
 # antenna
+SVM_clf_ant = svm.LinearSVC()
 SVMscores_ant = cross_val_score(SVM_clf_ant, antenna_samples, antenna_labels, cv=10, scoring='f1_weighted')
 SVM_clf_ant.fit(antenna_samples_train,antenna_labels_train)
 SVMantenna_predicted = SVM_clf_ant.predict(antenna_samples_test)
@@ -174,7 +177,7 @@ print('Antenna SVM 10CV f1_weighted scores : ' + str(SVMscores_ant))
 print('Antenna SVM classification report :\n' + str(classification_report(antenna_labels_test, SVMantenna_predicted)))
 print('Antenna SVM confusion matrix :\n' + str(confusion_matrix(antenna_labels_test, SVMantenna_predicted)))
 # residents
-SVM_clf_res = svm.SVC(decision_function_shape='ovo')
+SVM_clf_res = svm.LinearSVC()
 SVMscores_res = cross_val_score(SVM_clf_res, residents_samples, residents_labels, cv=10, scoring='f1_weighted')
 SVM_clf_res.fit(residents_samples_train,residents_labels_train)
 SVMresidents_predicted = SVM_clf_res.predict(residents_samples_test)
@@ -183,14 +186,21 @@ print('Residents SVM classification report :\n' + str(classification_report(resi
 print('Residents SVM confusion matrix :\n' + str(confusion_matrix(residents_labels_test, SVMresidents_predicted)))
 
 # xgboost
-XGBOOST_clf_ant = xgboost.XGBClassifier()
 # antenna
+XGBOOST_clf_ant = xgboost.XGBClassifier()
 XGBOOSTscores_ant = cross_val_score(XGBOOST_clf_ant, antenna_samples, antenna_labels, cv=10, scoring='f1_weighted')
 XGBOOST_clf_ant.fit(antenna_samples_train,antenna_labels_train)
 XGBOOSTantenna_predicted = XGBOOST_clf_ant.predict(antenna_samples_test)
 print('Antenna XGBOOST 10CV f1_weighted scores : ' + str(XGBOOSTscores_ant))
 print('Antenna XGBOOST classification report :\n' + str(classification_report(antenna_labels_test, XGBOOSTantenna_predicted)))
 print('Antenna XGBOOST confusion matrix :\n' + str(confusion_matrix(antenna_labels_test, XGBOOSTantenna_predicted)))
+print('Antenna XGBOOST features importances :\n' + str(XGBOOST_clf_ant.feature_importances_))
+
+for imp_t in importance_types:
+    print(imp_t + " : ",end = '')
+    for f in features_names[:len(antenna_dt_pd_ml_scaled.columns[:-1])]:
+        print(XGBOOST_clf_ant.get_booster().get_score(importance_type=imp_t).get(f), end = ' , ')
+    print()
 # residents
 XGBOOST_clf_res = xgboost.XGBClassifier()
 XGBOOSTscores_res = cross_val_score(XGBOOST_clf_res, residents_samples, residents_labels, cv=10, scoring='f1_weighted')
@@ -199,9 +209,13 @@ XGBOOSTresidents_predicted = XGBOOST_clf_res.predict(residents_samples_test)
 print('Residents XGBOOST 10CV f1_weighted scores : ' + str(XGBOOSTscores_res))
 print('Residents XGBOOST classification report :\n' + str(classification_report(residents_labels_test, XGBOOSTresidents_predicted)))
 print('Residents XGBOOST confusion matrix :\n' + str(confusion_matrix(residents_labels_test, XGBOOSTresidents_predicted)))
+print('Residents XGBOOST features importances :\n' + str(XGBOOST_clf_res.feature_importances_))
 
-print('XGBOOST antenna features importances :\n' + str(XGBOOST_clf_ant.feature_importances_))
-print('XGBOOST residents features importances :\n' + str(XGBOOST_clf_res.feature_importances_))
+for imp_t in importance_types:
+    print(imp_t + " : ",end = '')
+    for f in features_names[:len(residents_dt_pd_ml_scaled.columns[:-1])]:
+        print(XGBOOST_clf_res.get_booster().get_score(importance_type=imp_t).get(f), end = ' , ')
+    print()
 ```
 
 ### Output of the script above

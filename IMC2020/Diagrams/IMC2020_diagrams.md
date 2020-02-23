@@ -238,10 +238,14 @@ liverpool_4G_AntVor_x_LSOA_count = sjoin(liverpool_lsoa_2019_gpd,telefonica_ante
 liverpool_4G_AntVor_x_LSOA_count = liverpool_4G_AntVor_x_LSOA_count.groupby(['index','IMDDecil'], as_index=False).count().drop(columns=['index','geometry']).rename(columns={'index_right': '4G_antenna_count'})
 ```
 
+    C:\ProgramData\Anaconda3\lib\site-packages\geopandas\tools\sjoin.py:56: UserWarning: CRS of frames being joined does not match!({'init': 'epsg:3857'} != {'init': 'epsg:4326'})
+      '(%s != %s)' % (left_df.crs, right_df.crs))
+    
+
 
 ```python
 fig, ax = plt.subplots(1, 3, figsize=(18, 3), facecolor='w', edgecolor='k')
-fig.suptitle('UK LSOA vs Voronoi cell area sizes from 3/4G antennas per IMD decile', size=20, y=1.12)
+fig.suptitle('Figure 3a Distribution of number of sectors per LSOA', size=20, y=1.12)
 
 def applyPlotStyle(ax):
     ax.yaxis.grid(True, linestyle='-', which='both', color='lightgrey')
@@ -306,7 +310,7 @@ london_4G_res_count = homeantenna_london_pd[homeantenna_london_pd['generation']=
 
 ```python
 fig, ax = plt.subplots(1, 3, figsize=(18, 3), facecolor='w', edgecolor='k')
-fig.suptitle('UK LSOA vs Voronoi cell area sizes from 3/4G antennas per IMD decile', size=20, y=1.12)
+fig.suptitle('Fig 3b Distribution of number of residents’ devices served by sectors', size=20, y=1.12)
 
 def applyPlotStyle(ax):
     ax.yaxis.grid(True, linestyle='-', which='both', color='lightgrey')

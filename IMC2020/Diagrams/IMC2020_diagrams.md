@@ -310,7 +310,7 @@ london_4G_res_count = homeantenna_london_pd[homeantenna_london_pd['generation']=
 
 ```python
 fig, ax = plt.subplots(1, 3, figsize=(18, 3), facecolor='w', edgecolor='k')
-fig.suptitle('Fig 3b Distribution of number of residents’ devices served by sectors', size=20, y=1.12)
+fig.suptitle('Figure 3b Distribution of number of residents’ devices served by sectors', size=20, y=1.12)
 
 def applyPlotStyle(ax):
     ax.yaxis.grid(True, linestyle='-', which='both', color='lightgrey')

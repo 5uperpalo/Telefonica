@@ -1,1 +1,0 @@
-Notebook diagrams and pictures

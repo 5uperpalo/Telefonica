@@ -14,28 +14,151 @@ from shapely.ops import cascaded_union
 from geovoronoi import voronoi_regions_from_coords
 from geovoronoi import points_to_coords
 import seaborn as sns
+from shapely.geometry import Point
 ```
+
+# 0. Telefonica Antenna dataset transformation
+Original file is in tsv (tab separate value format) without header, but I was able to come across the header from somwhere/somehow - I can't recall when/from who. The file is also in 'EPSG:7405 - OSGB 1936 / British National Grid' format. Again I am not sure how I found it out - maybe QGIS automatically detected it?
+
+
+```python
+telefonica_antenna_location = 'datasets/Telefonica_Antenna/Antenna.tsv'
+header = ['csr', 'cell_id', 'sector', 'mi_mycom_id', 'generation', 'wcel_id', 'fdd', 'model_name', 
+          'site_name', 'site_type', 'cell_type', 'manufacturer', 'lacod', 'ne_id', 'msc', 'cell_carriers', 
+          'cell_3g_carrier', 'cell_of_origin', 'zone_code', 'adr1', 'adr2', 'adr3', 'town', 'country', 
+          'postcode', 'easting', 'northing', 'bcch', 'arfcn', 'trx_list', 'ncc', 'bcc', 'scc', 'sac', 
+          'rac', 'tma', 'environment', 'kit_type', 'antenna_num', 'beam_width', 'ant_name', 'ant_height', 
+          'ground_height', 'tilt', 'elec_tilt', 'azimuth', 'power', 'losses', 'area', 'region', 'bis_date', 
+          'site_generation_type', 'cell_owner', 'jv_id', 'enodeb_id', 'pci', 'tac', 'rsi', 'ura', 'enodebname', 
+          'databuild_dttm', 'lkey', 'dt', 'google_cluster_id', 'field_65']
+```
+
+
+```python
+telefonica_antenna_pd = pd.read_csv(telefonica_antenna_location, sep='\t', names=header)
+telefonica_antenna_pd = telefonica_antenna_pd[['generation','lkey','easting','northing']]
+
+geometry = [Point(xy) for xy in zip(telefonica_antenna_pd.easting, telefonica_antenna_pd.northing)]
+telefonica_antenna_pd = telefonica_antenna_pd.drop(['easting', 'northing'],axis=1)
+crs = {'init': 'epsg:7405'}
+telefonica_antenna_gpd = gpd.GeoDataFrame(telefonica_antenna_pd, crs=crs, geometry=geometry)
+# we temporarily convert it to 4326 CRS as that is the CRS of LSOA dataset - in case somebody want to play with it in QGIS
+telefonica_antenna_gpd = telefonica_antenna_gpd.to_crs(epsg=4326)
+```
+
+
+```python
+print('Number of all antennas in the dataset: ' + str(len(telefonica_antenna_gpd)))
+print('Number of antennas that do not have coordinates: ' + str(len(telefonica_antenna_gpd[telefonica_antenna_gpd.geometry.type!='Point'])))
+print('Unique values in antenna generation column: ' + str(telefonica_antenna_gpd.generation.unique()))
+print('Number of antennas with 2G Generation values: ' + str(len(telefonica_antenna_gpd[telefonica_antenna_gpd.generation == '2G'])))
+print('Number of antennas with 3G Generation values: ' + str(len(telefonica_antenna_gpd[telefonica_antenna_gpd.generation == '3G'])))
+print('Number of antennas with 4G Generation values: ' + str(len(telefonica_antenna_gpd[telefonica_antenna_gpd.generation == '4G'])))
+print('Number of antennas with 5G Generation values: ' + str(len(telefonica_antenna_gpd[telefonica_antenna_gpd.generation == '5G'])))
+print('Number of antennas with empty Generation values: ' + str(len(telefonica_antenna_gpd[telefonica_antenna_gpd.generation.isna()])))
+print('Number of duplicate antennas (sometimes there are 2 entries with additional informaiton for same antenna): ' + str(len(telefonica_antenna_gpd[telefonica_antenna_gpd.lkey.duplicated()])))
+```
+
+    Number of all antennas in the dataset: 345299
+    Number of antennas that do not have coordinates: 0
+    Unique values in antenna generation column: ['2G' '3G' '4G' '5G' nan]
+    Number of antennas with 2G Generation values: 49799
+    Number of antennas with 3G Generation values: 118203
+    Number of antennas with 4G Generation values: 93853
+    Number of antennas with 5G Generation values: 1674
+    Number of antennas with empty Generation values: 81770
+    Number of duplicate antennas (sometimes there are 2 entries with additional informaiton for same antenna): 44074
+    
+
+
+```python
+# fill missing generation cells with 'None' string so we can filter it out easily afterwards
+telefonica_antenna_gpd.generation.fillna('None', inplace=True)
+# drop unneeded duplicates
+telefonica_antenna_gpd.drop_duplicates(['lkey'], keep='first', inplace=True)
+telefonica_antenna_gpd.to_file('datasets/Telefonica_Antenna/telefonica_antenna_uk_EPSG4326-WGS84.geojson', driver='GeoJSON')
+```
+
+
+```python
+telefonica_antenna_gpd.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>generation</th>
+      <th>lkey</th>
+      <th>geometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2G</td>
+      <td>10001-21106</td>
+      <td>POINT (-0.0887915681373477 51.51296644413622)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3G</td>
+      <td>21032-10759</td>
+      <td>POINT (-0.0887915681373477 51.51296644413622)</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2G</td>
+      <td>20001-21106</td>
+      <td>POINT (-0.0887915681373477 51.51296644413622)</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>3G</td>
+      <td>21032-20759</td>
+      <td>POINT (-0.0887915681373477 51.51296644413622)</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2G</td>
+      <td>30001-21106</td>
+      <td>POINT (-0.0887915681373477 51.51296644413622)</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
 
 # 1. Dataset preprocessing
 
 
 ```python
-# from O2 Telefonica - originally in CRS EPSG:7405 - OSGB 1936 / British National Grid - Projected; .csv file
-# I loaded the file to QGIS and saved it as geojson with EPSG4326-WGS84
 telefonica_antenna_gpd_location = 'datasets/Telefonica_Antenna/telefonica_antenna_uk_EPSG4326-WGS84.geojson'
 # from UK gov http://data-communities.opendata.arcgis.com/datasets/lower-super-output-area-lsoa-imd2019-wgs84
 lsoa_2019_gpd_loc = 'datasets/UK_LSOA/Lower_Super_Output_Area_LSOA_IMD2019__WGS84.geojson'
 
 telefonica_antenna_gpd = gpd.read_file(telefonica_antenna_gpd_location)
-# there are 2414 antennas that do not have coordinates -> no geometry(None)
-telefonica_antenna_gpd = telefonica_antenna_gpd[telefonica_antenna_gpd.geometry.type=='Point']
-# filter columns that we will use
-telefonica_antenna_gpd = telefonica_antenna_gpd[['generation','lkey','geometry']]
-# either play with 3/4G or fill empty values with 'None' string
-#telefonica_antenna_gpd = telefonica_antenna_gpd[(telefonica_antenna_gpd['generation']=='3G') | (telefonica_antenna_gpd['generation']=='4G')]
-#telefonica_antenna_gpd = telefonica_antenna_gpd[telefonica_antenna_gpd['generation']=='4G']
-telefonica_antenna_gpd.generation.fillna('None', inplace=True)
-telefonica_antenna_gpd.drop_duplicates(['lkey'], keep='first', inplace=True)
+# filter generation of antennas we will use
+#telefonica_antenna_gpd = telefonica_antenna_gpd[(telefonica_antenna_gpd['generation']=='3G') | (telefonica_antenna_gpd['generation']=='4G') | (telefonica_antenna_gpd['generation']=='5G')]
+#telefonica_antenna_gpd = telefonica_antenna_gpd[(telefonica_antenna_gpd['generation']=='4G') | (telefonica_antenna_gpd['generation']=='5G')]
 lsoa_2019_gpd = gpd.read_file(lsoa_2019_gpd_loc)
 
 # gpds have to be converted to epsg 3857 as that is the basemap coordinate system (background map in plots)
@@ -101,8 +224,12 @@ add_basemap(ax, zoom=10)
 ax.set_axis_off()
 ```
 
+    C:\ProgramData\Anaconda3\lib\site-packages\contextily\tile.py:199: FutureWarning: The url format using 'tileX', 'tileY', 'tileZ' as placeholders is deprecated. Please use '{x}', '{y}', '{z}' instead.
+      FutureWarning,
+    
 
-![png](output_7_0.png)
+
+![png](output_13_1.png)
 
 
 # 3. O2 Telefonica antennas within LSOA boundaries
@@ -174,7 +301,7 @@ ax.set_axis_off()
 ```
 
 
-![png](output_12_0.png)
+![png](output_18_0.png)
 
 
 # 4. Antenna Voronoi tessellation
@@ -243,15 +370,18 @@ ax.set_axis_off()
 ```
 
 
-![png](output_16_0.png)
+![png](output_22_0.png)
 
 
 # 5. Assignment of LSOA IMD value to Antenna Voronoi cells based on largest overlap between Voronoi cell and LSOA regions
 
 
 ```python
+# the buffer(0) is a mysterious function - I had to use it because of 1 polygon in birgmingham for 345G version- sometime the intersections have issue and buffer(0) resolves it - it's workaround
 def get_size_of_intersection(row, right_gpd):
     return row['geometry'].intersection(right_gpd['geometry'].loc[int(row['index_right'])]).area
+def get_size_of_intersection_buf(row, right_gpd):
+    return row['geometry'].intersection(right_gpd['geometry'].buffer(0).loc[int(row['index_right'])]).area
 
 # 1. we do spatial join to get list of LSOAs that intersects voronoi cells
 london_voronoi_vs_lsoa = sjoin(telefonica_antenna_london_gpd_voronoi, london_lsoa_2019_gpd, how='left',op='intersects')
@@ -335,7 +465,7 @@ ax.set_axis_off()
 ```
 
 
-![png](output_20_0.png)
+![png](output_26_0.png)
 
 
 # 6. Assignment of LSOA IMD value from Antenna Voronoi cells to each antenna in dataset
@@ -383,38 +513,38 @@ telefonica_antenna_liverpool_imd_gpd.head()
   <tbody>
     <tr>
       <th>0</th>
-      <td>3G</td>
-      <td>21438-17982</td>
-      <td>POINT (-317951.7499682389 7049605.620724721)</td>
-      <td>5</td>
+      <td>2G</td>
+      <td>08851-8634</td>
+      <td>POINT (-331739.8479849889 7057970.066658555)</td>
+      <td>6</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2G</td>
-      <td>10826-150</td>
-      <td>POINT (-317951.7499682389 7049605.620724721)</td>
-      <td>5</td>
+      <td>3G</td>
+      <td>21880-11860</td>
+      <td>POINT (-332748.0823947123 7060286.172188723)</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>2</th>
       <td>2G</td>
-      <td>20826-150</td>
-      <td>POINT (-317951.7499682389 7049605.620724721)</td>
-      <td>5</td>
+      <td>18357-8634</td>
+      <td>POINT (-332748.0823947123 7060286.172188723)</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>3</th>
       <td>3G</td>
-      <td>21438-11183</td>
-      <td>POINT (-317951.7499682389 7049605.620724721)</td>
-      <td>5</td>
+      <td>21880-21860</td>
+      <td>POINT (-332748.0823947123 7060286.172188723)</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>3G</td>
-      <td>21438-21183</td>
-      <td>POINT (-317951.7499682389 7049605.620724721)</td>
-      <td>5</td>
+      <td>2G</td>
+      <td>28357-8634</td>
+      <td>POINT (-332748.0823947123 7060286.172188723)</td>
+      <td>2</td>
     </tr>
   </tbody>
 </table>

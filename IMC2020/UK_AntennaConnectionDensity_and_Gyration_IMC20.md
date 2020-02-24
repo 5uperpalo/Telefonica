@@ -72,13 +72,13 @@ data_schema = StructType([StructField('device_id', StringType(), True),
 # Section 2 Aggregated User 3/4G Experience and Antenna Connection Density by day
 ## Section 2.1 Data gathering and transformation
 
-1.     iterate over days 
-2.     split each row on "tab" 
-3.     create data frames  
-3.1    dataframes have rows where each rows begins with device_id, gyration, 2 mistery values and [antena_id(lkey), time_spent]  pairs   
-4.     join dataframes with previously identified residents and their home antennas 
-5.     filter resident/nonresident datasets 
-6.     group and calculate metrics 
+1. iterate over days 
+2. split each row on "tab" 
+3. create data frames  
+  3.1 dataframes have rows where each rows begins with device_id, gyration, 2 mistery values and [antena_id(lkey), time_spent]  pairs   
+4. join dataframes with previously identified residents and their home antennas 
+5. filter resident/nonresident datasets 
+6. group and calculate metrics 
 
 
 ```python

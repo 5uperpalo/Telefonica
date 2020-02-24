@@ -54,13 +54,13 @@ schema = StructType([StructField('device_id', StringType(), True),
 
 # Section 2 Home antenna detection
 
-1.     iterate over days 
-2.     split each row on "tab" 
-3.     create data frames from two 4hour night intervals  
-3.1    dataframes have rows where each rows begins with device_id, gyration, 2 mistery values and [antena_id(lkey), time_spent]  pairs
-3.2    each device_id has multiple rows 
-4.     unite both time intervals, sum times for same antennas, keep the antenna with max time_spent 
-5.     append dataframes from each day to final dataframe 
+1. iterate over days 
+2. split each row on "tab" 
+3. create data frames from two 4hour night intervals  
+  3.1 dataframes have rows where each rows begins with device_id, gyration, 2 mistery values and [antena_id(lkey), time_spent]  pairs  
+  3.2 each device_id has multiple rows 
+4. unite both time intervals, sum times for same antennas, keep the antenna with max time_spent 
+5. append dataframes from each day to final dataframe 
 
 
 ```python

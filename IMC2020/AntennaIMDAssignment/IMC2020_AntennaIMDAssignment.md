@@ -480,6 +480,11 @@ telefonica_antenna_london_imd_gpd.to_file('datasets/Telefonica_Antenna/XG/telefo
 telefonica_antenna_birmingham_imd_gpd.to_file('datasets/Telefonica_Antenna/XG/telefonica_antenna_birmingham_imd_gpd.geojson', driver='GeoJSON')
 telefonica_antenna_liverpool_imd_gpd.to_file('datasets/Telefonica_Antenna/XG/telefonica_antenna_liverpool_imd_gpd.geojson', driver='GeoJSON')
 
+# for HomeDetection script
+telefonica_antenna_london_imd_gpd.to_csv('datasets/Telefonica_Antenna/XG/telefonica_antenna_london_imd_pd.csv',index=False)
+telefonica_antenna_birmingham_imd_gpd.to_csv('datasets/Telefonica_Antenna/XG/telefonica_antenna_birmingham_imd_pd.csv',index=False)
+telefonica_antenna_liverpool_imd_gpd.to_csv('datasets/Telefonica_Antenna/XG/telefonica_antenna_liverpool_imd_pd.csv',index=False)
+
 telefonica_antenna_liverpool_imd_gpd.head()
 ```
 
